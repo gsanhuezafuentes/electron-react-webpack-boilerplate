@@ -48,7 +48,6 @@ function createWindow() {
         indexPath = url.format({
             protocol: 'http:',
             host: 'localhost:8080',
-            pathname: 'index.html',
             slashes: true
         })
     } else {
@@ -80,7 +79,7 @@ function createWindow() {
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
 
-
+/*
 app.whenReady().then(() => {
     if (dev) {
         const { default: installExtension, REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS } = require('electron-devtools-installer')
@@ -92,7 +91,7 @@ app.whenReady().then(() => {
         mainWindow.webContents.openDevTools()
     }
 });
-
+*/
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
     // On macOS it is common for applications and their menu bar
